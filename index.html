@@ -450,8 +450,8 @@
   <section class="save__section">
     <button
             type="button"
-            onclick="event.preventDefault(); window['dialog'].showModal();"
-            aria-controls="dialog"
+            onclick="return false; window['dialog'].showModal();"
+            aria-controls="dialog"  
             class="button save__button"
     >
       <svg class="button__icon" viewBox="0 0 29 28">
@@ -471,7 +471,7 @@
     </svg>
     <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
     <div class="dialog__controller" >
-      <button type="button" class="button dialog__button" onclick="event.preventDefault(); window['dialog'].close();">
+      <button type="button" class="button dialog__button" onclick="return false; window['dialog'].close();">
         <span class="button__text">ОК</span>
       </button>
     </div>
