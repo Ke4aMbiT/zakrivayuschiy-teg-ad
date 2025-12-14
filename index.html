@@ -450,8 +450,8 @@
   <section class="save__section">
     <button
             type="button"
-            onclick="return false; window['dialog'].showModal();"
-            aria-controls="dialog"  
+            onclick="return false; window['dialog-floppy'].showModal();"
+            aria-controls="dialog-floppy"  
             class="button save__button"
     >
       <svg class="button__icon" viewBox="0 0 29 28">
@@ -460,7 +460,7 @@
       <span class="button__text">Сохранить на память</span>
     </button>
   </section>
-  <dialog class="dialog" id="dialog">
+  <dialog class="dialog-floppy" id="dialog">
     <svg
             class="dialog__icon"
             aria-hidden="true"
@@ -471,7 +471,7 @@
     </svg>
     <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
     <div class="dialog__controller" >
-      <button type="button" class="button dialog__button" onclick="return false; window['dialog'].close();">
+      <button type="button" class="button dialog__button" onclick="window['dialog-floppy'].close();"
         <span class="button__text">ОК</span>
       </button>
     </div>
