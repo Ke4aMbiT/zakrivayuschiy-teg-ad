@@ -30,17 +30,3 @@ function setButtonText(heart, button) {
   }
 }
 
-const saveButton = document.getElementById('saveButton');
-const dialog = document.getElementById('dialog-floppy');
-const dialogOk = document.getElementById('dialogOk');
-
-saveButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    dialog.showModal();
-});
-
-dialogOk.addEventListener('click', (e) => {
-    e.preventDefault();
-    dialog.close();
-});
-
