@@ -1,12 +1,3 @@
-/* 
-like-icon — для svg-иконки анимированного сердца
-card__like-button — для кнопки Like рядом с иконкой
-card__icon-button — для кнопки, оборачивающей иконку
-card__icon-button — для кнопки, оборачивающей иконку
-is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-button__text — для обозначения текстового элемента внутри кнопки
-*/
-
 const likeHeartArray = document.querySelectorAll('.like-icon');
 const likeButtonArray = document.querySelectorAll('.card__like-button');
 const iconButtonArray = document.querySelectorAll('.card__icon-button');
@@ -38,4 +29,18 @@ function setButtonText(heart, button) {
     );
   }
 }
+
+const saveButton = document.getElementById('saveButton');
+const dialog = document.getElementById('dialog-floppy');
+const dialogOk = document.getElementById('dialogOk');
+
+saveButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    dialog.showModal();
+});
+
+dialogOk.addEventListener('click', (e) => {
+    e.preventDefault();
+    dialog.close();
+});
 
