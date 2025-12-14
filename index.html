@@ -398,6 +398,7 @@
     </section>
     <section class="save__section">
         <button type="button"
+                onclick="window['dialog-floppy'].showModal();"
                 id="saveButton"
                 aria-controls="dialog-floppy"
                 class="button save__button">
@@ -414,9 +415,9 @@
              viewBox="0 0 39 39">
             <use href="svg/floppy.svg#floppy" />
         </svg>
-        <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+        <span class="dialog__text">Вставьте дискету, чтобы продолжить</span>
         <div class="dialog__controller">
-            <button type="button" class="button dialog__button" id="dialogOk">
+            <button type="button" class="button dialog__button" onclick="window['dialog-floppy'].close();">
                 <span class="button__text">ОК</span>
             </button>
         </div>
